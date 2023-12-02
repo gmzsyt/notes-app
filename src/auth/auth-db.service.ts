@@ -1,5 +1,3 @@
-// auth/auth-db.service.ts
-
 import { Injectable } from '@nestjs/common';
 import { PG_CONNECTION } from '../constants';
 import { Client } from 'pg';

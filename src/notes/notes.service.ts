@@ -1,4 +1,3 @@
-// notes/notes.service.ts
 import { Injectable } from '@nestjs/common';
 import { NotesDbService } from './notes-db.service';
 
