@@ -1,4 +1,4 @@
-// src/db/db.module.ts
+// db.module.ts
 import { Module } from '@nestjs/common';
 import { dbProvider } from './db.providers';
 

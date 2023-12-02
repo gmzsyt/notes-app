@@ -1,5 +1,4 @@
 // db.providers.ts
-
 import { PG_CONNECTION } from '../constants';
 import { Pool } from 'pg';
 import { DATABASE_CONFIG } from '../config/config';
@@ -16,6 +15,14 @@ export const dbProvider = {
           id SERIAL PRIMARY KEY,
           email VARCHAR(255) NOT NULL,
           password VARCHAR(255) NOT NULL
+        );
+      `);
+
+      await client.query(`
+        CREATE TABLE IF NOT EXISTS notes (
+          id SERIAL PRIMARY KEY,
+          title VARCHAR(255) NOT NULL,
+          content TEXT NOT NULL
         );
       `);
 
